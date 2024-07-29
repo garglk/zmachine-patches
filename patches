@@ -8,9 +8,8 @@
 # ];
 #
 # However, since “junk” is a local variable with value 0 instead of a
-# text buffer, this is asking to read from/write to address 0. This
-# works in some interpreters, but Bocfel is more strict, and aborts the
-# program. Rewrite this instead to:
+# text buffer, this is asking to read from/write to address 0. Rewrite
+# this instead to:
 #
 # @read_char 1 10 PauseFunc -> junk;
 0x4912 8 [e4 94 05 00 0a 12 5a 05] [f6 53 01 0a 12 5a 05 b4]
